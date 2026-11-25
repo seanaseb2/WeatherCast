@@ -81,9 +81,8 @@ def main():
               " [2] Unsubscribe from Location\n"
               " [3] View My Locations\n"
               " [4] View Weather Updates\n"
-              " [5] Clear Terminal\n"
-              " [6] Disconnect\n"
-              " [7] Exit")
+              " [5] Disconnect\n"
+              " [6] Exit")
         choice = input("\nEnter choice: ").strip()
 
         if choice == "1":
@@ -146,14 +145,11 @@ def main():
                 print(f"{RED}Error: {r['error']}{RESET}\n")
 
         elif choice == "5":
-            clear_screen()
-
-        elif choice == "6":
             client.disconnect()
             clear_screen()
             print(f"{YELLOW}Disconnected. Alerts published now will be queued for you.{RESET}\n")
 
-        elif choice == "7":
+        elif choice == "6":
             client.disconnect()
             break
 

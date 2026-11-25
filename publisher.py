@@ -75,8 +75,7 @@ def main():
         print_header("WEATHERCAST - PUBLISHER", f"Logged in as {a.name}")
         print("\n [1] Publish Weather Update\n"
               " [2] View Published Updates\n"
-              " [3] Clear Terminal\n"
-              " [4] Exit")
+              " [3] Exit")
         choice = input("\nEnter choice: ").strip()
 
         if choice == "1":
@@ -122,9 +121,6 @@ def main():
             print()
 
         elif choice == "3":
-            clear_screen()
-
-        elif choice == "4":
             client.disconnect()
             break
 
